@@ -4,7 +4,10 @@
   "description": "(/ Bē /: A web based application to let you become more zen)",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.3.16"
   },
   "devDependencies": {},
   "scripts": {

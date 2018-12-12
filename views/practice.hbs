@@ -1,0 +1,87 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link rel="stylesheet" href="css/base.css">
+<section class="hero">
+  <div class="background-image" style="background-image: url(https://images.unsplash.com/photo-1481007553706-bde1ba8e91fd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=caec8d3a7e2fbd72ff14891daf9df3d1&auto=format&fit=crop&w=1500&q=80);"></div>
+  <div class="hero-content-area">
+    <h1>Be Present</h1>
+    <h2> Click on each of the videos (or at least one) and try to listen to it for 30 seconds or so then go to the diary section and log your thoughts </h1>
+
+      <p>As you listen to each video try to think positive thoughts and rember that others are not making sounds to annoy you </p>
+      <h2> <a   href="" target="_blank"> Lip Smacking </a> </h2>
+      <audio controls style="margin-bottom: 50px">>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2> <a   href="" target="_blank"> Chewing </a> </h2>
+<audio controls style="margin-bottom: 50px">>
+<source src="horse.ogg" type="audio/ogg">
+<source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2> <a   href="" target="_blank"> Pen Tapping </a> </h2>
+<audio controls style="margin-bottom: 50px">
+<source src="horse.ogg" type="audio/ogg">
+<source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br>
+<h2> <a   href="" target="_blank"> Sniffiling </a> </h2>
+<audio controls style="margin-bottom: 50px">>
+<source src="horse.ogg" type="audio/ogg">
+<source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+    </div>
+  </section>
+  <script>
+  function wordWeek(){
+    Array.prototype.shuffle = function() {
+      var input = this;
+
+      for (var i = input.length-1; i >=0; i--) {
+
+        var randomIndex = Math.floor(Math.random()*(i+1));
+        var itemAtIndex = input[randomIndex];
+        input[randomIndex] = input[i];
+        input[i] = itemAtIndex;
+      }
+      return input;
+    }
+    var tempArray = [ "Bliss", "Breathe", "Move", "Inspire", "Forgive", "Plan", "Rejoyce" ]
+    tempArray.shuffle();
+    document.getElementById("days").innerHTML = tempArray[0];
+  }
+  function lucky(){
+    var luck = Array.from({length: 25}, () => Math.floor(Math.random() * 2));
+    const reducer = (a, c) => a + c;
+    document.getElementById("num").innerHTML = luck.reduce(reducer);
+  }
+  function returnKind(){
+    var quotes = [
+      'Our greatest glory is not in never falling, but in rising every time we fall',
+      'All our dreams can come true, if we have the courage to pursue them',
+      'It does not matter how slowly you go as long as you do not stop',
+      'If you desire to make a difference in the world, you must be different from the world.',
+      'Happiness can be found in the darkest of times, if one only remembers to turn on the light'
+    ]
+
+    var word = ['glory', 'slowly', 'difference', 'world'];
+    var day = word[Math.floor(Math.random()*word.length)];
+    function filterItems(w) {
+      return quotes.filter(function(m) {
+        return m.indexOf(w) > -1;
+      })
+    }
+    document.getElementById("quote").innerHTML = filterItems(day);
+  }
+  returnKind();
+  lucky();
+  wordWeek();
+</script>

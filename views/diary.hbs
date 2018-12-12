@@ -1,0 +1,52 @@
+<body>
+  <section class="hero">
+    <div class="background-image" style="background-image: url(https://images.unsplash.com/photo-1494931216633-3f436bf43829?ixlib=rb-0.3.5&s=55016974a0680e57a7b013331d790eec&auto=format&fit=crop&w=1500&q=80);"></div>
+    <div class="hero-content-area">
+      <h1>Be Mindful</h1>
+      <h3>The more aware you become of your sourroundings the better your mental wellness will be</h3>
+      <h3>
+        "We can learn to see each other and see ourselves in each other and recognize that human beings are more alike than we are unalike."
+        - Maya Angelou</h3>
+      </div>
+      <section class="pengu">
+        <p class = "add">
+
+          <form method="POST" action = "" align="center" >
+            Event and Date:  <input name = "date" type = "text" > <br> <br>
+            Initial Thought:  <input name = "stars" type = "text"><br> <br>
+            Consequence/Behavior: <input name = "best" type = "text"><br> <br>
+            Rational/Counter Statement: <input name = "bad" type = "text"><br> <br>
+            Describe today in one word: <input name = "better" type = "text"><br> <br>
+            What can you do to make tomorrow better: <input name = "quote" type = "text"><br> <br>
+
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </p>
+      </section>
+      <section class="pengu">
+        <h3 class="title"> Past Entries</h3>
+        <hr>
+      </section>
+      <ul>
+        {{#each days}}
+        <section>
+          <p>
+            <br> Day: {{date}} <br>
+            Initial Thought: {{stars}} <br>
+            Consequence/Behavior: {{best}}<br>
+            Rational/Counter Statement: {{bad}}<br>
+            The Day in One word: {{better}}<br>
+            How you said you would make tomorrow better: {{quote}}<br>
+          </p>
+          <!-- <form action="/diary/{{_id}}/delete" method="POST">
+          <input type="submit" value="delete"/>
+        </form> -->
+      </section>
+      {{/each}}
+    </ul>
+  </section>
+</section>
+</body>
+</html>

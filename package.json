@@ -1,32 +1,23 @@
 {
-  "name": "rachelnarios-final-project",
+  "name": "imbue",
   "version": "1.0.0",
-  "description": "The content below is an example project proposal / requirements document. Replace the text below the lines marked \"__TODO__\" with details specific to your project. Remove the \"TODO\" lines.",
-  "main": "app.js",
+  "description": "(/ Bē /: A web based application to let you become more zen)",
+  "main": "index.js",
   "dependencies": {
-    "boostrap": "^2.0.0",
-    "chai": "^4.2.0",
-    "eslint": "^5.9.0",
-    "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "hbs": "^4.0.1",
-    "mocha": "^5.2.0",
-    "mongodb": "^3.1.8",
-    "mongoose": "^5.3.12",
-    "node": "^11.0.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nyu-csci-ua-0480-001-003-fall-2018/Rachelnarios-final-project.git"
+    "url": "git+https://github.com/Rachelnarios/imbue.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/Rachelnarios-final-project/issues"
+    "url": "https://github.com/Rachelnarios/imbue/issues"
   },
-  "homepage": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/Rachelnarios-final-project#readme"
+  "homepage": "https://github.com/Rachelnarios/imbue#readme"
 }
